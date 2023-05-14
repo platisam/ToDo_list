@@ -10,8 +10,7 @@ function App() {
   };
 
   const addTask = () => {
-    const newTodoList = [...todoList, newTask];
-    setTodoList(newTodoList);
+    setTodoList([...todoList, newTask]);
   };
 
   return (
@@ -20,7 +19,11 @@ function App() {
         <input onChange={handleChange} />
         <button onClick={addTask}>Add Task</button>
       </div>
-      <div className="list"></div>
+      <div className="list">
+        {todoList.map((task) => {
+          return <h2>{task}</h2>;
+        })}
+      </div>
     </div>
   );
 }
