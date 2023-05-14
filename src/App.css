@@ -20,6 +20,32 @@ body {
   align-items: center;
 }
 
+.addTask button {
+  width: 70px;
+  height: 28px;
+  margin-left: 5px;
+  text-align: center;
+  font-weight: 700;
+  background-color: bisque;
+  color: rgb(9, 73, 136);
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.addTask input {
+  color: rgb(9, 73, 136);
+  font-weight: 700;
+  text-align: center;
+  background-color: bisque;
+  border: none;
+  height: 26px;
+}
+
 .list {
   height: auto;
   width: 100%;
@@ -38,9 +64,23 @@ body {
   justify-content: center;
 }
 
+.task h2 {
+  color: rgb(39, 57, 175);
+}
+
 .task button {
   width: 25px;
   height: 20px;
   margin-left: 20px;
   text-align: center;
+  font-weight: 700;
+  background-color: crimson;
+  color: white;
+  outline: none;
+  border: 1px solid rgb(9, 73, 136);
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
